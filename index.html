@@ -1,98 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eranda Somathilake</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bhathiya Rathnayake | Controls, Robotics, & Intelligent Systems</title>
     <style>
         body {
-            font-family: "Poppins", sans-serif;
-            background-color: transparent;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #3b5998;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
-            margin: 0; /* Remove default margin */
         }
-        .header {
-            display: flex; /* Use flexbox for layout */
-            align-items: flex-start; /* Align items to the left */
-            margin-bottom: 20px;
-            margin-top: 40px; /* Add space from the top of the page */
+        .profile-picture {
+            width: 300px;
+            padding-right: 20px;
         }
-        .profile-image {
-            width: 200px; /* Increased width */
-            height: 200px; /* Increased height */
-            border-radius: 50%; /* Make it circular */
-            overflow: hidden;
-            margin-top: 8px;
-            object-fit: cover; /* Maintain aspect ratio */
-            margin-right: 20px; /* Space between image and text */
+        .profile-picture img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
         }
-        h1 {
-            margin: 0; /* Remove default margin */
+        .content {
+            flex-grow: 1;
         }
         h2 {
-            margin-top: 40px;
-            color: #4A4A4A;
+            color: #333;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
         }
-        .intro {
-            margin-top: 15px; /* Space above the introduction */
-            flex: 1; /* Allow the paragraph to take available space */
+        .section {
+            margin-bottom: 20px;
         }
-        p {
-            margin-bottom: 10px; /* Reduced margin below paragraphs */
-            font-size: 1.1em;
-            line-height: 1.5; /* Improve readability */
-            color: #4A4A4A;
+        .contact-info {
+            font-style: italic;
         }
-        .personal-details {
-            margin-top: 5px; /* Space above personal details */
-            text-align: left; /* Align text to the left */
+        .teaching-list {
+            list-style-type: none;
+            padding-left: 0;
         }
-        ul {
-            margin: 20px 0;
-            padding-left: 20px; /* Adjusted for better alignment */
-            list-style-type: none; /* No bullets */
-        }
-        ul li {
-            margin-bottom: 10px; /* Space between items */
-            background-color: #ffffff; /* White background for each item */
-            padding: 10px;
-            border-radius: 5px; /* Rounded corners */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        .teaching-list li {
+            padding: 5px 0;
         }
         a {
-            color: #007BFF; /* Link color */
-            text-decoration: none; /* No underline */
+            color: #0073e6;
+            text-decoration: none;
         }
         a:hover {
-            text-decoration: underline; /* Underline on hover */
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <img src="assets/profile.jpg" alt="Eranda Somathilake" class="profile-image" />
-        <div class="intro">
-            <h1>Eranda Somathilake</h1>
-            <p>
-                I am a B.Sc Engineering graduate from the Faculty of Engineering, University of Peradeniya in Mechanical Engineering. Currently working as a temporary instructor and a volunteering research assistant at the University of Peradeniya.
-            </p>
-            <div class="personal-details">
-                <p>email: <a href="mailto:somathilake.eranda@gmail.com">somathilake.eranda@gmail.com</a></p>
-                <p>
-                    <a href="https://www.linkedin.com/in/eranda-somathilake-795192182">LinkedIn</a> | 
-                    <a href="https://scholar.google.com/citations?user=5GFBmMYAAAAJ&hl=en">Google Scholar</a> | 
-                    <a href="https://github.com/eranda-s/">Github</a>
-                </p>
-            </div>
-        </div>
+
+<header>
+    <h1>Bhathiya Rathnayake</h1>
+    <p>Controls, Robotics, & Intelligent Systems</p>
+</header>
+
+<div class="container">
+    <div class="profile-picture">
+        <img src="profile.jpg" alt="Profile Picture of Bhathiya Rathnayake">
+        <p><strong>Email:</strong> brm222@ucsd.edu</p>
+        <p><strong>Office:</strong> Franklin Antonio Hall 3304</p>
+        <p><strong>Lab:</strong> Franklin Antonio Hall 3301</p>
     </div>
 
-    <h2>Publications</h2>
-    <ul>
-        <li>Assessment of Fetal and Maternal Well-Being During Pregnancy Using Passive Wearable Inertial Sensor [<a href="https://arxiv.org/abs/2111.10066">link</a>]</li>
-        <li>Fetal Movement Identification from Multi Accelerometer Measurements using Recurrent Neural Networks <i>[In-press]</i></li>
-        <li>Fetal Movement Detection using Long Short-Term Memory Network [<a href="https://ieeexplore.ieee.org/document/9606131">link</a>]</li>
-        <li>Comprehensive Study on Denoising of Medical Images Utilizing Neural Network Based Auto-Encoder [<a href="https://arxiv.org/abs/2102.01903">link</a>]</li>
-    </ul>
+    <div class="content">
+        <div class="section">
+            <h2>Biography</h2>
+            <p>I am an expert in control systems with a focus on robotics and intelligent systems. Currently, I am pursuing my PhD at the University of California, San Diego. My research involves control theory, optimization, and data-driven control strategies for advanced robotic applications.</p>
+        </div>
+
+        <div class="section">
+            <h2>Research Interests</h2>
+            <p>My work aims to advance the reliability, efficiency, and versatility of autonomous robotic systems. I focus on safe control, data-driven control, event-triggered systems, and robotics applications. My contributions include the development of optimization methods for large-scale control systems, control theory for nonlinear systems, and reinforcement learning applications.</p>
+        </div>
+
+        <div class="section">
+            <h2>Teaching</h2>
+            <ul class="teaching-list">
+                <li><strong>Fall '24:</strong> <a href="#">ECE 171A: Linear Control System Theory</a></li>
+                <li><strong>Spring '24:</strong> <a href="#">ECE 276B: Planning & Learning in Robotics</a></li>
+                <li><strong>Winter '24:</strong> <a href="#">ECE 276A: Sensing & Estimation in Robotics</a></li>
+                <li><strong>Fall '23:</strong> <a href="#">ECE 171A: Linear Control System Theory</a></li>
+                <!-- Add more teaching information as necessary -->
+            </ul>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
