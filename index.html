@@ -4,105 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bhathiya Rathnayake | Controls, Robotics, & Intelligent Systems</title>
+    <title>Anatoly Zlotnik</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            scroll-behavior: smooth;
         }
         header {
-            background-color: #3b5998;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        .container {
-            display: flex;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .profile-picture {
-            width: 300px;
-            padding-right: 20px;
-        }
-        .profile-picture img {
+            background-color: white;
+            padding: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
             width: 100%;
-            height: auto;
-            border-radius: 8px;
+            z-index: 1000;
         }
-        .content {
-            flex-grow: 1;
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
         }
-        h2 {
-            color: #333;
-            border-bottom: 2px solid #ccc;
-            padding-bottom: 5px;
+        header nav a:hover {
+            color: #0066cc;
         }
         .section {
-            margin-bottom: 20px;
+            padding: 100px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
-        .contact-info {
-            font-style: italic;
+        #home {
+            text-align: center;
+            padding-top: 100px;
         }
-        .teaching-list {
-            list-style-type: none;
-            padding-left: 0;
+        #home img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
         }
-        .teaching-list li {
-            padding: 5px 0;
-        }
-        a {
-            color: #0073e6;
+        .social-icons a {
+            margin: 0 10px;
             text-decoration: none;
+            color: #0066cc;
         }
-        a:hover {
-            text-decoration: underline;
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 5px 0;
+        }
+        .column {
+            display: inline-block;
+            width: 45%;
+            vertical-align: top;
+        }
+        .clearfix {
+            clear: both;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Bhathiya Rathnayake</h1>
-    <p>Controls, Robotics, & Intelligent Systems</p>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-<div class="container">
-    <div class="profile-picture">
-        <img src="profile.jpg" alt="Profile Picture of Bhathiya Rathnayake">
-        <p><strong>Email:</strong> brm222@ucsd.edu</p>
-        <p><strong>Office:</strong> Franklin Antonio Hall 3304</p>
-        <p><strong>Lab:</strong> Franklin Antonio Hall 3301</p>
+<div id="home" class="section">
+    <img src="https://via.placeholder.com/150" alt="Bhathiya Rathnayake">
+    <h1>Bhathiya Rathnayake</h1>
+    <p>PhD Candidate-Intelligent Systems, Robotics, and Control</p>
+    <p>Electrical and Computer Engineering</p>
+    <p>University of California San Diego</p>
+    <div class="social-icons">
+        <a href="mailto:example@example.com">📧</a>
+        <a href="tel:+1234567890">📞</a>
+        <a href="https://linkedin.com" target="_blank">🔗</a>
+        <a href="https://github.com" target="_blank">🐙</a>
     </div>
+</div>
 
-    <div class="content">
-        <div class="section">
-            <h2>Biography</h2>
-            <p>I am an expert in control systems with a focus on robotics and intelligent systems. Currently, I am pursuing my PhD at the University of California, San Diego. My research involves control theory, optimization, and data-driven control strategies for advanced robotic applications.</p>
-        </div>
+<div id="projects" class="section">
+    <h2>Projects</h2>
+    <p>Details about projects go here...</p>
+</div>
 
-        <div class="section">
-            <h2>Research Interests</h2>
-            <p>My work aims to advance the reliability, efficiency, and versatility of autonomous robotic systems. I focus on safe control, data-driven control, event-triggered systems, and robotics applications. My contributions include the development of optimization methods for large-scale control systems, control theory for nonlinear systems, and reinforcement learning applications.</p>
-        </div>
+<div id="publications" class="section">
+    <h2>Publications</h2>
+    <p>Details about publications go here...</p>
+</div>
 
-        <div class="section">
-            <h2>Teaching</h2>
-            <ul class="teaching-list">
-                <li><strong>Fall '24:</strong> <a href="#">ECE 171A: Linear Control System Theory</a></li>
-                <li><strong>Spring '24:</strong> <a href="#">ECE 276B: Planning & Learning in Robotics</a></li>
-                <li><strong>Winter '24:</strong> <a href="#">ECE 276A: Sensing & Estimation in Robotics</a></li>
-                <li><strong>Fall '23:</strong> <a href="#">ECE 171A: Linear Control System Theory</a></li>
-                <!-- Add more teaching information as necessary -->
-            </ul>
-        </div>
-    </div>
+<div id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
+    <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
 </div>
 
 </body>
