@@ -3,112 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bhathiya Rathnayake</title>
+    <title>Nikolay Atanasov - UCSD</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            scroll-behavior: smooth;
         }
-        header {
-            background-color: white;
-            padding: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: fixed;
-            width: 100%;
-            z-index: 1000;
-        }
-        header nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-        }
-        header nav a:hover {
-            color: #0066cc;
-        }
-        .section {
-            padding: 100px 20px;
-            max-width: 1200px;
+        .container {
+            width: 80%;
             margin: 0 auto;
         }
-        #home {
+        .header {
+            background-color: #6079C3;
+            color: white;
+            padding: 20px;
             text-align: center;
-            padding-top: 100px;
+            font-size: 24px;
+            font-weight: bold;
         }
-        #home img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background-color: #6079C3;
+            color: white;
+            padding: 10px 0;
+            font-size: 18px;
         }
-        .social-icons a {
-            margin: 0 10px;
+        .tabs a {
+            color: white;
+            padding: 10px 20px;
             text-decoration: none;
-            color: #0066cc;
         }
-        h2 {
-            font-size: 2rem;
+        .tabs a:hover {
+            background-color: #4A5F9A;
+        }
+        .profile {
+            display: flex;
+            margin: 20px 0;
+        }
+        .profile img {
+            max-width: 200px;
+            margin-right: 20px;
+        }
+        .info {
+            flex: 1;
+        }
+        .info h2 {
+            font-size: 24px;
+            margin: 0;
+            color: #333;
+        }
+        .info p {
+            font-size: 16px;
+            margin: 5px 0;
+            line-height: 1.5;
+        }
+        .research {
+            margin: 20px 0;
+        }
+        .research h3 {
+            font-size: 20px;
+            color: #333;
             margin-bottom: 10px;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            margin: 5px 0;
-        }
-        .column {
-            display: inline-block;
-            width: 45%;
-            vertical-align: top;
-        }
-        .clearfix {
-            clear: both;
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f5f5f5;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#publications">Publications</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-
-<div id="home" class="section">
-    <img src="assets/profile.jpg" alt="Bhathiya Rathnayake">
-    <h1>Bhathiya Rathnayake</h1>
-    <p>PhD Candidate-Intelligent Systems, Robotics, and Control</p>
-    <p>Electrical and Computer Engineering</p>
-    <p>University of California San Diego</p>
-    <div class="social-icons">
-        <a href="mailto:example@example.com">📧</a>
-        <a href="tel:+1234567890">📞</a>
-        <a href="https://linkedin.com" target="_blank">🔗</a>
-        <a href="https://github.com" target="_blank">🐙</a>
+    <div class="header">
+        Nikolay Atanasov - UCSD
     </div>
-</div>
 
-<div id="projects" class="section">
-    <h2>Projects</h2>
-    <p>Details about projects go here...</p>
-</div>
+    <div class="tabs">
+        <a href="#biography">Biography</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#cv">CV</a>
+    </div>
 
-<div id="publications" class="section">
-    <h2>Publications</h2>
-    <p>Details about publications go here...</p>
-</div>
+    <div class="container">
 
-<div id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
-    <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
-</div>
+        <div id="biography" class="profile">
+            <img src="assets/profile.jpg" alt="Bhathiya Rathnayake">
+            <div class="info">
+                <h2>Biography</h2>
+                <p>I am an Associate Professor in the Department of Electrical and Computer Engineering at University of California, San Diego. I direct the Existential Robotics Laboratory (ERL). I am affiliated with the Contextual Robotics Institute (CRI) at UCSD.</p>
+                <p>Before joining UCSD, I was a Postdoctoral Fellow at the department of Mechanical Engineering and Applied Mechanics, University of Pennsylvania, working with Vijay Kumar. I defended my Ph.D. dissertation on Active Information Acquisition with Mobile Robots at the department of Electrical and Systems Engineering, University of Pennsylvania in July, 2015. My advisors were George J. Pappas and Kostas Daniilidis.</p>
+                <p>I received an M.S. degree in Electrical Engineering from the University of Pennsylvania, Philadelphia, PA, in 2012 and a B.S. degree in Electrical Engineering from Trinity College, Hartford, CT, in 2008.</p>
+                <p><strong>Email:</strong> natanasov@ucsd.edu</p>
+                <p><strong>Office:</strong> Franklin Antonio Hall 3304</p>
+                <p><strong>Lab:</strong> Franklin Antonio Hall 3301</p>
+            </div>
+        </div>
+
+        <div id="research" class="research">
+            <h3>Research Interests</h3>
+            <p>My research goal is to develop scientific principles for increasing the reliability, efficiency, and versatility of autonomous robot systems. My work focuses on autonomous information collection using ground and aerial mobile robots in localization and mapping, environmental monitoring, and security and surveillance applications. My research contributions include probabilistic environment models that unify geometry and semantics and optimal control and reinforcement learning algorithms for minimizing uncertainty in these models.</p>
+            <p>The fields relevant to my research are robotics, machine learning, control theory, optimization, and computer vision.</p>
+        </div>
+
+        <div id="publications" class="research">
+            <h3>Publications</h3>
+            <p>List your publications here...</p>
+        </div>
+
+        <div id="cv" class="research">
+            <h3>CV</h3>
+            <p>Your CV details here...</p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        &copy; 2024 Nikolay Atanasov - UCSD
+    </div>
 
 </body>
 </html>
