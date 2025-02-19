@@ -1,181 +1,21 @@
-/* Default CSS file for jemdoc with improved professional aesthetics */
+/* Default css file for jemdoc with improved typography */
 
 body {
-    background: #f8f9fa; /* Soft off-white background for a modern look */
-    font-family: 'Lora', Georgia, serif;
-    font-size: 16px;
-    color: #333;
-    line-height: 1.6;
+    background: white;
+    font-family: 'Lora', serif; /* Updated font */
     padding-bottom: 8px;
     margin: 0;
 }
 
-/* Layout styling */
-table#tlayout {
-    border: none;
-    border-collapse: separate;
-    background: white;
-}
-
-/* Menu Styling */
-#layout-menu {
-    background: #ffffff;
-    border: 1px solid #ddd;
-    padding: 10px;
-    font-size: 1.1em;
-    width: auto;
-    white-space: nowrap;
-    text-align: left;
-    vertical-align: top;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-#layout-menu td {
-    background: #f5f5f5;
-    vertical-align: top;
-}
-
-#layout-menu a {
-    line-height: 1.8em;
-    margin-left: 0.5em;
-    color: #0056b3;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-#layout-menu a:hover {
-    color: #003366;
-    border-bottom: 2px solid #0056b3;
-}
-
-/* Content layout */
-#layout-content {
-    padding: 1.5em;
-    border: none;
-    background: white;
-    text-align: left;
-    vertical-align: top;
-    max-width: 900px;
-    margin: auto;
-}
-
-/* Headings */
-h1, h2, h3 {
-    color: #0056b3;
-    font-weight: bold;
-    margin-top: 1em;
-    margin-bottom: 0.5em;
-    padding-bottom: 0.3em;
-    line-height: 1.2;
-    border-bottom: 2px solid #dddddd;
-}
-
-h1 {
-    font-size: 190%;
-}
-
-h2 {
-    font-size: 150%;
-}
-
-h3 {
-    font-size: 120%;
-    border-bottom: none;
-}
-
-/* Paragraph Styling */
-p {
-    margin-top: 0.3em;
-    margin-bottom: 1em;
-    padding: 0;
-}
-
-/* Hyperlinks */
-a {
-    color: #0056b3;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    color: #003366;
-    text-decoration: underline;
-}
-
-/* Footer */
-div#footer {
-    font-size: small;
-    border-top: 1px solid #c0c0c0;
-    padding-top: 0.5em;
-    margin-top: 4.0em;
-    color: #888888;
-    text-align: center;
-}
-
-div#footer a {
-    color: #0056b3;
-}
-
-/* Lists */
-ul {
-    list-style: square;
-    padding-left: 20px;
-}
-
-ol {
-    list-style: decimal;
-    padding-left: 20px;
-}
-
-/* Code Blocks */
 pre, tt {
     font-size: 90%;
-    font-family: 'Courier New', monospace;
-    background: #f4f4f4;
-    padding: 8px;
-    border-radius: 5px;
-    overflow-x: auto;
+    font-family: 'Fira Code', monospace; /* Improved monospace font for better readability */
 }
 
-div.codeblock > div.blockcontent {
-    background: #f8f8f8;
-    border: 1px solid #ccc;
-    padding: 10px;
+h1, h2, h3 {
+    font-family: 'Lora', serif; /* Ensuring headings use the improved typography */
 }
 
-/* Tables */
-table {
-    border: 1px solid #ccc;
-    border-collapse: collapse;
-    width: 100%;
-    margin-bottom: 1.5em;
-}
-
-td {
-    padding: 10px;
-    text-align: left;
-    border: 1px solid #ddd;
-}
-
-/* Images */
-img {
-    border-radius: 5px;
-    max-width: 100%;
-    height: auto;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
-
-    #layout-menu {
-        font-size: 1em;
-    }
-
-    #layout-content {
-        padding: 1em;
-    }
+a, a > tt {
+    font-family: 'Lora', serif; /* Links also use the upgraded typography */
 }
