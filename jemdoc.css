@@ -29,6 +29,24 @@ table#tlayout {
     vertical-align: top;
 }
 
+/* Make the title "Bhathiya" larger */
+#layout-menu .menu-title {
+    font-size: 1.5em; /* Increase font size */
+    font-weight: bold;
+    padding-bottom: 0.8em;
+    display: block;
+}
+
+/* Increase spacing between menu items */
+#layout-menu a {
+    line-height: 2.2em; /* Increased line spacing */
+    margin-left: 0.5em;
+    color: #0056b3;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+}
+
 /* Content layout */
 #layout-content {
     padding: 1.5em;
